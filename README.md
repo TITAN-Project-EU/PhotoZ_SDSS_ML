@@ -32,3 +32,7 @@ You can install the necessary Python libraries using pip:
 
 ```bash
 pip install tensorflow pandas numpy scikit-learn matplotlib
+
+### MLP classification
+
+The  [Python script](MLP_PhotoZ_SDSS.ipynb) demonstrates the complete process of using photometric data from the Sloan Digital Sky Survey (SDSS) to predict the redshift of galaxies using a machine learning model. The script includes data loading, preprocessing, visualization, model training, evaluation, and saving. It utilizes the TensorFlow library to construct and train a Multi-Layer Perceptron (MLP) neural network.
