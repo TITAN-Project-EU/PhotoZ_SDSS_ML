@@ -4,7 +4,7 @@ This project utilizes data from the Sloan Digital Sky Survey (SDSS) to create a 
 
 ## Project Overview
 
-The dataset comprises photometric properties and redshifts for 100 galaxies, with the aim of training a machine learning model to understand and predict how these properties correlate with redshift. The model could potentially be used to estimate redshifts for other astronomical data, assisting in cosmological studies.
+The dataset comprises photometric properties and redshifts for approximately 1M galaxies, with the aim of training a machine learning model to understand and predict how these properties correlate with redshift. The model could potentially be used to estimate redshifts for other astronomical data, assisting in cosmological studies.
 
 ## Data Description
 
