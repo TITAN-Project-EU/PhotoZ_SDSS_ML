@@ -15,6 +15,9 @@ The data is extracted using a SQL query from the SDSS online database, which inc
 
 ## Getting Started
 
+Download data from Zenodo
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11073039.svg)](https://doi.org/10.5281/zenodo.11073039)
+
 ### Dependencies
 
 Ensure you have the following installed:
