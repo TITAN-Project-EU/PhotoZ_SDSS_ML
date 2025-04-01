@@ -15,7 +15,7 @@ The data is extracted using a SQL query from the SDSS online database, which inc
 
 ## Getting Started
 
-Download data from Zenodo
+Download data from Zenodo  
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11073039.svg)](https://doi.org/10.5281/zenodo.11073039)
 
 ### Dependencies
@@ -28,6 +28,12 @@ Ensure you have the following installed:
 - Scikit-learn
 - Matplotlib
 
-### MLP classification
+### MLP Regression and Classification
 
-The  [Python script](MLP_PhotoZ_SDSS.ipynb) demonstrates the complete process of using photometric data from the Sloan Digital Sky Survey (SDSS) to predict the redshift of galaxies using a machine learning model. The script includes data loading, preprocessing, visualization, model training, evaluation, and saving. It utilizes the TensorFlow library to construct and train a Multi-Layer Perceptron (MLP) neural network.
+The [Python notebook](MLP_PhotoZ_SDSS.ipynb) demonstrates the complete process of using photometric data from the Sloan Digital Sky Survey (SDSS) to predict the redshift of galaxies using machine learning techniques.
+
+The redshift prediction problem is explored under **two formulations**:
+- **Regression**, where the redshift is treated as a continuous variable and predicted directly using a Multi-Layer Perceptron (MLP).
+- **Classification**, where the redshift range is discretized into bins, and the model is trained to classify galaxies into redshift intervals.
+
+Both models are evaluated and compared in terms of predictive accuracy and error metrics, offering insights into the effectiveness of each approach.
