@@ -33,7 +33,7 @@ Ensure you have the following installed:
 The Python notebooks demonstrate the complete process of using photometric data from the Sloan Digital Sky Survey (SDSS) to predict the redshift of galaxies using machine learning techniques.
 
 The redshift prediction problem is explored under **two formulations**:
--  [Python **Regression**](MLP_PhotoZ_SDSS.ipynb), where the redshift is treated as a continuous variable and predicted directly using a Multi-Layer Perceptron (MLP).
--  [**Classification** notebook](MLP_PhotoZ_SDSS_R&C.ipynb), where the redshift range is discretized into bins, and the model is trained to classify galaxies into redshift intervals.
+-  [**Regression**](MLP_PhotoZ_SDSS.ipynb), where the redshift is treated as a continuous variable and predicted directly using a Multi-Layer Perceptron (MLP).
+-  [**Classification**](MLP_PhotoZ_SDSS_R&C.ipynb), where the redshift range is discretized into bins, and the model is trained to classify galaxies into redshift intervals (also includes the regression case above)
 
 Both models are evaluated and compared in terms of predictive accuracy and error metrics, offering insights into the effectiveness of each approach.
