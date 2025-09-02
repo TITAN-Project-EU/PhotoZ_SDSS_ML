@@ -37,3 +37,17 @@ The redshift prediction problem is explored under **two formulations**:
 -  [**Classification**](MLP_PhotoZ_SDSS_R&C.ipynb), where the redshift range is discretized into bins, and the model is trained to classify galaxies into redshift intervals (also includes the regression case above)
 
 Both models are evaluated and compared in terms of predictive accuracy and error metrics, offering insights into the effectiveness of each approach.
+
+## Uncertainty-Aware Photo-z (MLP)
+
+**Notebook:** [`MLP_PhotoZ_SDSS_Uncertainty_github.ipynb`](MLP_PhotoZ_SDSS_Uncertainty_github.ipynb)
+
+This notebook extends the basic MLP photo-z workflow by producing **predictive uncertainties** alongside the point redshift estimate. It is designed for SDSS photometry (ugr) with spectroscopic ground truth and complements the regression/classification notebooks already in this repo.
+
+### What it does
+- Trains an MLP on SDSS photometric features to predict **photometric redshift** \(\hat{z}\).
+- Estimates **uncertainty** for each prediction, exposing both:
+  - **Epistemic** component via stochastic forward passes (dropout at inference).
+  - **Aleatoric** component via a heteroscedastic Gaussian head that learns a data-dependent variance (optional).
+- Outputs per-object results and diagnostics useful for downstream cosmology tasks.
+
